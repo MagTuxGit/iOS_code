@@ -18,11 +18,11 @@ let message = "\(multiplier) times 2.5 is \(Double(multiplier) * 2.5)"
 
 //indexing
 let greeting = "Guten Tag!"
-greeting[greeting.startIndex]					          // G	first
-greeting[greeting.index(before: greeting.endIndex)]	    // !	last
-greeting[greeting.index(after: greeting.startIndex)]	// u	2nd
-greeting[greeting.index(greeting.startIndex, offsetBy: 7)]	// a	7th from startIndex
-greeting[greeting.endIndex] 			// Error
+greeting[greeting.startIndex]                           // G    first
+greeting[greeting.index(before: greeting.endIndex)]	    // !    last
+greeting[greeting.index(after: greeting.startIndex)]	// u    2nd
+greeting[greeting.index(greeting.startIndex, offsetBy: 7)]	// a    7th from startIndex
+greeting[greeting.endIndex]                 // Error
 greeting.index(after: greeting.endIndex) 	// Error
 for index in greeting.characters.indices {
     print("\(greeting[index]) ", terminator: "")		// Prints "G u t e n   T a g ! "
