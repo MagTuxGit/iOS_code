@@ -12,6 +12,10 @@
             let sadderSwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
             sadderSwipeGestureRecognizer.direction = .down
             faceView.addGestureRecognizer(sadderSwipeGestureRecognizer)
+
+            let lrSGR = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
+            lrSGR.direction = [.left, .right]
+            faceView.addGestureRecognizer(lrSGR)
         }
     }
     
