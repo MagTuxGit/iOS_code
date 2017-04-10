@@ -1,6 +1,6 @@
 import UIKit
 
-func generateRandomNumbers(from: Int, to: Int, quantity: Int?) -> [Int] {
+func generateRandomNumbers(from: Int, to: Int, quantity: Int? = nil) -> [Int] {
     var randomNumbers = [Int]()
     
     let rangeSize = to-from+1
@@ -20,5 +20,5 @@ func generateRandomNumbers(from: Int, to: Int, quantity: Int?) -> [Int] {
     return randomNumbers
 }
 
-let a = generateRandomNumbers(from: 10, to: 20, quantity: nil)
+let a = generateRandomNumbers(from: 10, to: 20)
 let b = generateRandomNumbers(from: 10, to: 20, quantity: 5)
